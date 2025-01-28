@@ -117,7 +117,7 @@ export default function App() {
               }
               startContent={<div className="flex items-center">{icons.Warehouse}</div>}
             >
-              Warehouse and Logistics
+              Enterprise Wireless
             </DropdownItem>
             <DropdownItem
               href="/education"
@@ -131,7 +131,7 @@ export default function App() {
               }
               startContent={<div className="flex items-center">{icons.UniCap}</div>}
             >
-              Education
+              Enterprise Networks
             </DropdownItem>
             <DropdownItem
               href="/shousing"
@@ -145,7 +145,7 @@ export default function App() {
               }
               startContent={<div className="flex items-center">{icons.HouseIcon}</div>}
             >
-              Social Housing
+              Mobile Devices
             </DropdownItem>
             <DropdownItem
               href="/sretail"
@@ -159,7 +159,7 @@ export default function App() {
               }
               startContent={<div className="flex items-center">{icons.SmartRetail}</div>}
             >
-              Smart Retail
+              Mobile device Onboarding
             </DropdownItem>
             <DropdownItem
               href="/about"

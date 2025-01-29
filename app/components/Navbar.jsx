@@ -29,6 +29,7 @@ import {
   WiFi,
   NetWorking,
   Mobile,
+  OnboardIcon,
 } from "./Icons.jsx";
 import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
@@ -46,12 +47,13 @@ export default function App() {
     HouseIcon: <HouseIcon fill="#336699" size={35} />,
     SmartRetail: <SmartRetail fill="#d97706" size={35} strokeWidth={0.1} />,
     WiFi: <WiFi fill="#336699" size={35}  strokeWidth={1} />,
-    NetWorking: <NetWorking fill="#d97706" size={35} stroke="#d97706" strokeWidth={11} />,
+    NetWorking: <NetWorking fill="#d97706" size={35} stroke="#d97706" strokeWidth={13} />,
     Mobile: <Mobile fill="none" stroke="#336699" strokeWidth={2} size={37} />,
+    OnboardIcon: <OnboardIcon fill="#d97706" stroke="#d97706" size={35} />,
   };
 
   const menuItems = [
-    { label: "Warehouse and Logistics", href: "/wandl" },
+    { label: "Enterprise Wireless", href: "/ew" },
     { label: "Education", href: "/education" },
     { label: "Social Housing", href: "/shousing" },
     { label: "Smart Retail", href: "/sretail" },
@@ -112,13 +114,12 @@ export default function App() {
           </NavbarItem>
           <DropdownMenu aria-label="ToraSense IoT Industries" className="w-[340px]">
             <DropdownItem
-              href="/wandl"
-              key="Warehouse and Logistics"
+              href="/ew"
+              key="Enterprise Wireless"
               className="whitespace-normal break-words"
               description={
                 <span className="whitespace-normal break-words">
-                  Optimise warehouse efficiency, safety, and cost-effectiveness with real-time IoT 
-                  monitoring and predictive analytics tailored to your needs.
+                  Highly secure, high-performance enterprise wireless solutions, ensuring seamless connectivity for mission-critical operations.
                 </span>
               }
               startContent={<div className="flex items-center">{icons.WiFi}</div>}
@@ -131,8 +132,7 @@ export default function App() {
               className="whitespace-normal break-words"
               description={
                 <span className="whitespace-normal break-words">
-                  Transform the learning environment with IoT solutions that enhance safety, 
-                  optimise resource usage, and personalise the educational experience.
+                  Toranet provides highly secure, reliable enterprise networks, ensuring seamless connectivity and optimal performance for businesses
                 </span>
               }
               startContent={<div className="flex items-center">{icons.NetWorking}</div>}
@@ -145,8 +145,7 @@ export default function App() {
               className="whitespace-normal break-words"
               description={
                 <span className="whitespace-normal break-words">
-                  Enhance tenant safety, comfort, and energy efficiency in social housing with 
-                  smart IoT solutions that monitor and optimise living environments in real-time.
+                  We supply industry-ready mobile devices, enhancing productivity and efficiency across warehousing, logistics, and retail.
                 </span>
               }
               startContent={<div className="flex items-center">{icons.Mobile}</div>}
@@ -159,11 +158,10 @@ export default function App() {
               className="whitespace-normal break-words"
               description={
                 <span className="whitespace-normal break-words">
-                  Elevate customer experiences and streamline operations with IoT solutions that 
-                  personalise shopping, optimise inventory, and enhance in-store efficiency.
+                  Toranet simplifies mobile device onboarding with secure, seamless deployment for fast, hassle-free integration.
                 </span>
               }
-              startContent={<div className="flex items-center">{icons.SmartRetail}</div>}
+              startContent={<div className="flex items-center">{icons.OnboardIcon}</div>}
             >
               Mobile device Onboarding
             </DropdownItem>

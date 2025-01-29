@@ -2,14 +2,14 @@ import Link from "next/link";
 import HomePageTop from "./components/HomePageTop";
 import BottomContainer from "./components/BottomContainer";
 import ContainerThree from "./components/ContainerThree";
-import { Lightbulb, WiFi, Mobile, Pound } from "./components/Icons.jsx";
+import { Lightbulb, WiFi, Mobile, OnboardIcon } from "./components/Icons.jsx";
 import ThreeTextBlocks from './components/ThreeTextBlocks';
 import Image from "next/image";
 
 const icons = [
   <WiFi key="1" className="text-white" strokeWidth={1} size={40} />,
   <Mobile key="2" className="text-white" stroke="#ffffff" strokeWidth={2} size={43} />,
-  <Lightbulb key="3" className="text-white" size={45} />,
+  <OnboardIcon key="3" fill="#ffffff" stroke="#ffffff" size={45} />,
   <Lightbulb key="4" className="text-white" size={40} />,
 ];
 
@@ -22,7 +22,7 @@ export default function Home() {
           <div className="text-white">
             <h1 className="text-3xl text-orange-500 font-bold">Welcome to Toranet</h1>
             <p className="mt-2 text-lg">
-            Toranet provides enterprise-grade wireless and wired networks, seamless mobile device onboarding, and cutting-edge ToraSense solutions, empowering businesses to optimise performance, improve connectivity, and streamline operations with advanced mobile device integration.
+            Toranet provides enterprise grade secure wireless and wired networks, seamless mobile device onboarding, and cutting edge ToraSense IoT solutions, empowering businesses to optimise performance, improve connectivity, and streamline operations with advanced mobile device integration.
             </p>
           </div>
 
@@ -43,8 +43,8 @@ export default function Home() {
         <ThreeTextBlocks icons={icons}>
           <p>We deliver secure, enterprise-grade wired and wireless networks designed to ensure reliable connectivity and support for critical operations.</p>
           <p>Our solutions include mobile devices tailored for efficiency in industries like warehousing, logistics, and retail.</p>
-          <p>We streamline mobile device onboarding with secure, user-friendly processes that ensure rapid deployment and minimal downtime.</p>
-          <p>Our innovative ToraSense platform leverages real-time data from IoT sensors to optimize performance and enable predictive maintenance.</p>
+          <p>We streamline mobile device onboarding with secure, user-friendly software and workflows that ensure rapid deployment and minimal downtime.</p>
+          <p>Our innovative ToraSense platform leverages real-time data from IoT sensors to optimise performance and enable predictive maintenance.</p>
         </ThreeTextBlocks>
       </BottomContainer>
       <div className="block lg:hidden">

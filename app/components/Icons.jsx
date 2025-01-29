@@ -597,8 +597,6 @@ export const CustomShield = ({ fill = "#646363", size, height, width, ...props }
     </svg>
   );
 };
-<<<<<<< Updated upstream
-=======
 
 export const WiFi = ({ fill = "#646363", size, height, width, ...props }) => {
   return (
@@ -647,4 +645,3 @@ export const NetWorking = ({ fill = "#000000", stroke = "none", strokeWidth = 1,
     </svg>
   );
 };
->>>>>>> Stashed changes

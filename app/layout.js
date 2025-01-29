@@ -8,8 +8,8 @@ import Metrics from "./metrics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "ToraSense IoT Solutions",
-  description: "Advanced IoT Solutions Provider",
+  title: "Toranet Advanced Solutions",
+  description: "Advanced Solutions Provider",
   icons: {
     icon: "/favicon.ico",
   },

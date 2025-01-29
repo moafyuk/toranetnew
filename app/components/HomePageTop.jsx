@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { WiFi } from './Icons'; // Import only WiFi icon
+import { WiFi } from './Icons';
 
 // Function to generate evenly distributed positions
 const generateGridPositions = (iconCount, columns) => {

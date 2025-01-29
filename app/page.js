@@ -2,14 +2,14 @@ import Link from "next/link";
 import TopContainer from './components/TopContainer';
 import BottomContainer from "./components/BottomContainer";
 import ContainerThree from "./components/ContainerThree";
-import { Lightbulb, Analytics, ShieldIcon, Pound } from "./components/Icons.jsx";
+import { Lightbulb, WiFi, Mobile, Pound } from "./components/Icons.jsx";
 import ThreeTextBlocks from './components/ThreeTextBlocks';
-import ClickableImage from "./components/ClickableImage";
+import Image from "next/image";
 
 const icons = [
-  <Analytics key="1" className="text-white" size={40} />,
-  <ShieldIcon key="2" className="text-white" size={40} />,
-  <Pound key="3" className="text-white" size={45} />,
+  <WiFi key="1" className="text-white" strokeWidth={1} size={40} />,
+  <Mobile key="2" className="text-white" stroke="#ffffff" strokeWidth={2} size={43} />,
+  <Lightbulb key="3" className="text-white" size={45} />,
   <Lightbulb key="4" className="text-white" size={40} />,
 ];
 
@@ -20,25 +20,31 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center gap-6 p-6 rounded-md lg:w-[50rem] px-10 md:mx-6 mb-4 sm:mb-0 bg-gray-800 bg-opacity-75">
           {/* Text Section */}
           <div className="text-white">
-            <h1 className="text-3xl text-orange-500 font-bold">Welcome to ToraSense</h1>
+            <h1 className="text-3xl text-orange-500 font-bold">Welcome to Toranet</h1>
             <p className="mt-2 text-lg">
-              ToraSense delivers cutting-edge IoT solutions that provide real-time insights, optimise operational efficiency, and enhance safety across industries, empowering businesses to make smarter decisions and drive growth.
+            Toranet provides enterprise-grade wireless and wired networks, seamless mobile device onboarding, and cutting-edge ToraSense solutions, empowering businesses to optimise performance, improve connectivity, and streamline operations with advanced mobile device integration.
             </p>
           </div>
 
           {/* Image Section (Hidden on Mobile) */}
-          <div className="hidden lg:block flex-shrink-0 opacity-100 bg-opacity-100 bg-gray-800 ">
-            <ClickableImage src="/IOT_Image_2D.png" alt="IoT Data Flow" width={250} height={250} className="rounded-lg cursor-pointer " />
+          <div className="hidden lg:block flex-shrink-0">
+            <Image 
+              src="/safety_alt.png" 
+              alt="IoT Data Flow" 
+              width={250} 
+              height={250} 
+              className="rounded-lg cursor-pointer"
+            />
           </div>
         </div>
       </TopContainer>
 
       <BottomContainer>
         <ThreeTextBlocks icons={icons}>
-          <p>Use real-time data analytics to anticipate maintenance needs and proactively address potential issues before they disrupt operations.</p>
-          <p>Integrating IoT raises security concerns. We prioritise protecting your IT environment, enhancing efficiency while safeguarding your data and infrastructure.</p>
-          <p>Reduce labour costs and increase accuracy by automating routine inspections and environmental monitoring, freeing up your team to focus on strategic tasks.</p>
-          <p>Track and optimise the usage of energy and materials, driving down operational costs and enhancing sustainability.</p>
+          <p>We deliver secure, enterprise-grade wired and wireless networks designed to ensure reliable connectivity and support for critical operations.</p>
+          <p>Our solutions include mobile devices tailored for efficiency in industries like warehousing, logistics, and retail.</p>
+          <p>We streamline mobile device onboarding with secure, user-friendly processes that ensure rapid deployment and minimal downtime.</p>
+          <p>Our innovative ToraSense platform leverages real-time data from IoT sensors to optimize performance and enable predictive maintenance.</p>
         </ThreeTextBlocks>
       </BottomContainer>
       <div className="block lg:hidden">

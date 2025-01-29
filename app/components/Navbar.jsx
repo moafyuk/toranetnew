@@ -26,6 +26,9 @@ import {
   HouseIcon,
   SmartRetail,
   UniCap,
+  WiFi,
+  NetWorking,
+  Mobile,
 } from "./Icons.jsx";
 import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
@@ -42,6 +45,9 @@ export default function App() {
     Support: <TagUser fill="#336699" size={35} />,
     HouseIcon: <HouseIcon fill="#336699" size={35} />,
     SmartRetail: <SmartRetail fill="#d97706" size={35} strokeWidth={0.1} />,
+    WiFi: <WiFi fill="#336699" size={35}  strokeWidth={1} />,
+    NetWorking: <NetWorking fill="#d97706" size={35} stroke="#d97706" strokeWidth={11} />,
+    Mobile: <Mobile fill="none" stroke="#336699" strokeWidth={2} size={37} />,
   };
 
   const menuItems = [
@@ -100,7 +106,7 @@ export default function App() {
                 radius="sm"
                 variant="light"
               >
-                Industries
+                Technology
               </Button>
             </DropdownTrigger>
           </NavbarItem>
@@ -115,7 +121,7 @@ export default function App() {
                   monitoring and predictive analytics tailored to your needs.
                 </span>
               }
-              startContent={<div className="flex items-center">{icons.Warehouse}</div>}
+              startContent={<div className="flex items-center">{icons.WiFi}</div>}
             >
               Enterprise Wireless
             </DropdownItem>
@@ -129,7 +135,7 @@ export default function App() {
                   optimise resource usage, and personalise the educational experience.
                 </span>
               }
-              startContent={<div className="flex items-center">{icons.UniCap}</div>}
+              startContent={<div className="flex items-center">{icons.NetWorking}</div>}
             >
               Enterprise Networks
             </DropdownItem>
@@ -143,7 +149,7 @@ export default function App() {
                   smart IoT solutions that monitor and optimise living environments in real-time.
                 </span>
               }
-              startContent={<div className="flex items-center">{icons.HouseIcon}</div>}
+              startContent={<div className="flex items-center">{icons.Mobile}</div>}
             >
               Mobile Devices
             </DropdownItem>

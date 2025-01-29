@@ -1,5 +1,5 @@
 import Link from "next/link";
-import TopContainer from './components/TopContainer';
+import HomePageTop from "./components/HomePageTop";
 import BottomContainer from "./components/BottomContainer";
 import ContainerThree from "./components/ContainerThree";
 import { Lightbulb, WiFi, Mobile, Pound } from "./components/Icons.jsx";
@@ -16,7 +16,7 @@ const icons = [
 export default function Home() {
   return (
     <div>
-      <TopContainer>
+      <HomePageTop imageSrc="/toranetwh-gs.png" imageAlt="Smart Retail" imageFill={true} imageStyle={{ objectFit: 'cover' }} imageClassName="opacity-100">
         <div className="flex flex-col lg:flex-row items-center gap-6 p-6 rounded-md lg:w-[50rem] px-10 md:mx-6 mb-4 sm:mb-0 bg-gray-800 bg-opacity-75">
           {/* Text Section */}
           <div className="text-white">
@@ -37,7 +37,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </TopContainer>
+      </HomePageTop>
 
       <BottomContainer>
         <ThreeTextBlocks icons={icons}>

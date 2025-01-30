@@ -54,10 +54,10 @@ export default function App() {
 
   const menuItems = [
     { label: "Enterprise Wireless", href: "/ew" },
-    { label: "Education", href: "/education" },
+    { label: "Enterprise Networks", href: "/en" },
     { label: "Social Housing", href: "/shousing" },
     { label: "Smart Retail", href: "/sretail" },
-    { label: "Toracare Support", href: "/about" },
+    { label: "Toracare Support", href: "/toracare" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Articles", href: "/articles" },
@@ -127,8 +127,8 @@ export default function App() {
               Enterprise Wireless
             </DropdownItem>
             <DropdownItem
-              href="/education"
-              key="Education"
+              href="/en"
+              key="Enterprise Networks"
               className="whitespace-normal break-words"
               description={
                 <span className="whitespace-normal break-words">
@@ -166,7 +166,7 @@ export default function App() {
               Mobile device Onboarding
             </DropdownItem>
             <DropdownItem
-              href="/about"
+              href="/toracare"
               key="supreme_support"
               className="whitespace-normal break-words"
               description={
@@ -176,7 +176,7 @@ export default function App() {
               }
               startContent={<div className="flex items-center">{icons.Support}</div>}
             >
-              +Supreme Support
+              Toracare Support
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>

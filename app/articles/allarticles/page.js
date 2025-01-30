@@ -12,9 +12,9 @@ const AllArticlesPage = () => {
     },
     {
       id: 2,
-      title: 'LoRaWAN vs Wi-Fi HaLow',
+      title: 'WiNG EoS Announcement',
       description: 'A comparison of two prominent IoT communication technologies.',
-      link: '/articles/lora-halow',
+      link: '/articles/wingeos',
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const AllArticlesPage = () => {
     },
     {
       id: 4,
-      title: 'WiNG EoS and XIQ',
+      title: 'WiNG EoS and Migration to XIQ',
       imageSrc: '/bimage-1.png',
       link: '/articles/xiqeol',
       description: 'Maximising the Lifespan of WiNG Wireless Network with Toranet and Extreme Networks ',

@@ -35,43 +35,41 @@ const HomePageTop = ({
   imageFill = true,
   imageStyle = { objectFit: 'cover' },
   imageClassName = 'opacity-100',
+  iconComponent: IconComponent = WiFi, // Default to WiFi if not provided
 }) => {
   const [iconCount, setIconCount] = useState(30);
-  const [columns, setColumns] = useState(6); // Default: More columns for desktop
+  const [columns, setColumns] = useState(6);
 
-  // Adjust icon count & columns based on screen size
   useEffect(() => {
     const updateLayout = () => {
       if (window.innerWidth < 640) {
-        setIconCount(6); // Mobile: Fewer icons
-        setColumns(3); // Mobile: 3 columns
+        setIconCount(6);
+        setColumns(3);
       } else if (window.innerWidth < 1024) {
-        setIconCount(12); // Tablet: Medium count
-        setColumns(4); // Tablet: 4 columns
+        setIconCount(12);
+        setColumns(4);
       } else {
-        setIconCount(30); // Desktop: Full count
-        setColumns(6); // Desktop: 6 columns
+        setIconCount(30);
+        setColumns(6);
       }
     };
 
-    updateLayout(); // Run on first load
+    updateLayout();
     window.addEventListener('resize', updateLayout);
     return () => window.removeEventListener('resize', updateLayout);
   }, []);
 
-  // Generate positions dynamically
   const scatteredIcons = generateGridPositions(iconCount, columns).map((position, i) => ({
     id: i,
-    Component: WiFi,
-    size: Math.random() * 40 + 30, // Random size (30px - 70px)
-    opacity: 0.4, // Static opacity
-    color: `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 1)`, // Random stroke color
-    position
+    Component: IconComponent, // Use the provided icon component
+    size: Math.random() * 40 + 30,
+    opacity: 0.4,
+    color: `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 1)`,
+    position,
   }));
 
   return (
     <div className="relative w-full h-[55vh] bg-white bg-opacity-100 overflow-hidden">
-      {/* Background Image */}
       <Image
         src={imageSrc || '/whouse-gs.webp'}
         alt={imageAlt}
@@ -80,7 +78,6 @@ const HomePageTop = ({
         className={imageClassName}
       />
 
-      {/* Scattered WiFi Icons */}
       {scatteredIcons.map(({ id, Component, size, opacity, color, position }) => (
         <Component
           key={id}
@@ -91,13 +88,12 @@ const HomePageTop = ({
             left: `${position.left}%`,
             opacity,
             stroke: color,
-            strokeWidth: 2
+            strokeWidth: 2,
           }}
           size={size}
         />
       ))}
 
-      {/* Gradient Overlay and Children */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-85 flex items-center justify-center px-4">
         {children}
       </div>

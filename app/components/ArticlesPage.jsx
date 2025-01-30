@@ -27,9 +27,9 @@ const ArticlesPage = () => {
     },
     {
       id: 4,
-      title: 'LoraWAN and Wi-Fi HaLow',
+      title: 'WiNG EoS Announcement',
       imageSrc: '/bimage-1.png',
-      link: '/articles/lora-halow',
+      link: '/articles/wingeos',
       description: 'Understanding the Differences Between LoRaWAN and Wi-Fi HaLow.',
     },
     {

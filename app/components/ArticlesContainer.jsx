@@ -27,7 +27,7 @@ const ArticlesContainer = ({ children }) => {
     };
 
     const createParticles = () => {
-      const maxParticles = window.innerWidth < 768 ? 50 : 400;
+      const maxParticles = window.innerWidth < 768 ? 50 : 250;
       particles = [];
       for (let i = 0; i < maxParticles; i++) {
         particles.push({

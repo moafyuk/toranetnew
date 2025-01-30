@@ -1,4 +1,4 @@
-import TopContainer from '../components/TopContainer';
+import HomePageTop from '../components/HomePageTop';
 import BottomContainer from '../components/BottomContainer';
 import ContainerThree from '../components/ContainerThree';
 import { Lightbulb, Analytics, EyeIcon, ShieldIcon, } from "../components/Icons.jsx";
@@ -14,12 +14,12 @@ const icons = [
 export default function App() {
   return (
     <>
-      <TopContainer imageSrc="/whouse-gs.webp" imageAlt="Warehousing and Logistics" imageFill={true} imageStyle={{ objectFit: 'cover' }} imageClassName="opacity-100">
+      <HomePageTop imageSrc="/whouse-gs.webp" imageAlt="Warehousing and Logistics" imageFill={true} imageStyle={{ objectFit: 'cover' }} imageClassName="opacity-100">
         <div className="text-white p-4 flex flex-col rounded-md lg:w-[35rem] px-10 md:mx-6 mb-4 sm:mb-0 bg-gray-800 bg-opacity-75">
           <h1 className="text-3xl text-orange-500 font-bold">Enterprise Wireless</h1>
           <p className="mt-2 text-lg">Toranet provides secure, high-performance enterprise wireless solutions, ensuring seamless connectivity, scalability, and reliability. Designed for mission critical applications, our networks support businesses in warehousing, logistics, retail, and education with robust security and optimal performance.</p>
         </div>
-      </TopContainer>
+      </HomePageTop>
       <BottomContainer>
           <ThreeTextBlocks icons={icons}> 
             <p>Designed for mission-critical operations, our networks deliver high availability and low downtime, ensuring seamless performance for warehouses, logistics, retail, and other demanding industries.</p>

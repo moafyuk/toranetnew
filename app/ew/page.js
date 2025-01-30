@@ -16,16 +16,16 @@ export default function App() {
     <>
       <TopContainer imageSrc="/whouse-gs.webp" imageAlt="Warehousing and Logistics" imageFill={true} imageStyle={{ objectFit: 'cover' }} imageClassName="opacity-100">
         <div className="text-white p-4 flex flex-col rounded-md lg:w-[35rem] px-10 md:mx-6 mb-4 sm:mb-0 bg-gray-800 bg-opacity-75">
-          <h1 className="text-3xl text-orange-500 font-bold">Warehouse and Logistics</h1>
-          <p className="mt-2 text-lg">In the highly competitive world of warehousing and logistics, efficiency, safety, and cost-effectiveness are paramount. ToraSense, offers cutting-edge IoT technology designed to optimise your warehouse operations and elevate your business performance.</p>
+          <h1 className="text-3xl text-orange-500 font-bold">Enterprise Wireless</h1>
+          <p className="mt-2 text-lg">Toranet provides secure, high-performance enterprise wireless solutions, ensuring seamless connectivity, scalability, and reliability. Designed for mission critical applications, our networks support businesses in warehousing, logistics, retail, and education with robust security and optimal performance.</p>
         </div>
       </TopContainer>
       <BottomContainer>
           <ThreeTextBlocks icons={icons}> 
-            <p>Use real-time data analytics to anticipate maintenance needs and proactively address potential issues before they disrupt operations.</p>
-            <p>Protect your workforce and assets with our collision sensors, designed to prevent accidents and ensure compliance with safety regulations.</p>
-            <p>Reduce labour costs and increase accuracy by automating routine inspections and environmental monitoring, freeing up your team to focus on strategic tasks.</p>
-            <p>Track and optimise the usage of energy and materials, driving down operational costs and enhancing sustainability.</p>
+            <p>Designed for mission-critical operations, our networks deliver high availability and low downtime, ensuring seamless performance for warehouses, logistics, retail, and other demanding industries.</p>
+            <p>Toranet ensures enterprise wireless security with 802.1X authentication, providing strong access control, encrypted connections, and identity-based policies to protect against unauthorised access and cyber threats.</p>
+            <p>We provide high-speed, low-latency wireless, optimised for dense environments, enabling smooth data transmission, seamless roaming, and uninterrupted productivity in high demand enterprise settings.</p>
+            <p>Toranet delivers reliable, always-on connectivity, eliminating dead zones and network disruptions to ensure real-time operations and continuous mobility for workers and automated systems.</p>
           </ThreeTextBlocks>
       </BottomContainer>
       <div className="block lg:hidden">

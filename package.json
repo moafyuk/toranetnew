@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "docker": "docker build -t reg.internal.toranet.co.uk/torasense:latest . && docker push reg.internal.toranet.co.uk/torasense:latest && docker system prune -f",
+    "docker": "docker build -t reg.internal.toranet.co.uk/toranetweb:latest . && docker push reg.internal.toranet.co.uk/toranetweb:latest && docker system prune -f",
     "sitemap": "next-sitemap",
     "postbuild": "next-sitemap"
   },

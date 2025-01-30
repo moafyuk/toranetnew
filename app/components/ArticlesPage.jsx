@@ -6,10 +6,10 @@ const ArticlesPage = () => {
   const articles = [
     {
       id: 1,
-      title: 'IoT in Warehousing and Logistics',
+      title: 'WiNG EoS and XIQ',
       imageSrc: '/bimage-1.png',
-      link: '/articles/wlogistics',
-      description: 'Understanding how IoT can benefit operations in Warehousing and Logistics.',
+      link: '/articles/xiqeol',
+      description: 'Maximising the Lifespan of WiNG Wireless Network with Toranet and Extreme Networks ',
     },
     {
       id: 2,
@@ -20,10 +20,10 @@ const ArticlesPage = () => {
     },
     {
       id: 3,
-      title: 'IoT Security',
-      imageSrc: '/bimage.png',
-      link: '/articles/iotsecurity',
-      description: 'Understanding the Security Implications of IoT (Internet of Things) and How to Counter These Concerns',
+      title: 'IoT in Warehousing and Logistics',
+      imageSrc: '/bimage-1.png',
+      link: '/articles/wlogistics',
+      description: 'Understanding how IoT can benefit operations in Warehousing and Logistics.',
     },
     {
       id: 4,

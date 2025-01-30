@@ -6,9 +6,9 @@ const AllArticlesPage = () => {
   const articles = [
     {
       id: 1,
-      title: 'Understanding the Security Implications of IoT',
-      description: 'Explore the challenges and solutions to securing IoT devices and networks.',
-      link: '/articles/iotsecurity',
+      title: 'IoT in Warehousing and Logistics',
+      description: 'Discover how IoT enhances efficiency, safety, and decision-making in logistics.',
+      link: '/articles/wlogistics',
     },
     {
       id: 2,
@@ -24,9 +24,10 @@ const AllArticlesPage = () => {
     },
     {
       id: 4,
-      title: 'IoT in Warehousing and Logistics',
-      description: 'Discover how IoT enhances efficiency, safety, and decision-making in logistics.',
-      link: '/articles/wlogistics',
+      title: 'WiNG EoS and XIQ',
+      imageSrc: '/bimage-1.png',
+      link: '/articles/xiqeol',
+      description: 'Maximising the Lifespan of WiNG Wireless Network with Toranet and Extreme Networks ',
     },
     {
       id: 5,

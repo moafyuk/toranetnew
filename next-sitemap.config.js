@@ -1,5 +1,5 @@
 const config = {
-  siteUrl: "https://torasense.com",
+  siteUrl: "https://toranet.net",
   generateRobotsTxt: true,
   changefreq: "monthly",
 };
